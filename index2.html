@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head><title>HTML Lanjutan</title></head>
+<body>
+<h1>Data Mahasiswa</h1>
+<table border="1">
+<tr><th>NIM</th><th>Nama</th><th>Program Studi</th></tr>
+<tr><td>31241001</td><td>Juherdi</td><td>Teknik Informatika</td></tr>
+<tr><td>31241002</td><td>Indra</td><td>Teknik Informatika</td></tr>
+<tr><td>31241003</td><td>Tegar</td><td>Teknik Informatika</td></tr>
+<tr><td>31241004</td><td>Rubben</td><td>Teknik Informatika</td></tr>
+<tr><td>31241005</td><td>Fani</td><td>Teknik Informatika</td></tr>
+</table>
+</body>
+</html>
+<br />
+<table border="1">
+<caption>Nilai Praktikum</caption>
+<thead><tr><th>No</th><th>Nama</th><th>Nilai</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Juherdi</td><td>85</td></tr>
+<tr><td>2</td><td>Indra</td><td>90</td></tr>
+<tr><td>2</td><td>Tegar</td><td>90</td></tr>
+<tr><td>2</td><td>Rubben</td><td>90</td></tr>
+<tr><td>2</td><td>Fani</td><td>90</td></tr>
+</tbody>
+<tfoot><tr><td colspan="2">Rata-rata</td><td>85</td></tr></tfoot>
+</table>
+<br />
+<h1>Form Registrasi Mahasiswa</h1>
+<form>
+<label for="nama">Nama Lengkap</label><br>
+<input type="text" id="nama" name="nama"><br><br>
+<label for="email">Email</label><br>
+<input type="email" id="email" name="email"><br><br>
+<label for="password">Password</label><br>
+<input type="password" id="password" name="password"><br><br>
+<label for="tanggal">Tanggal Lahir</label><br>
+<input type="date" id="tanggal" name="tanggal"><br><br>
+<button type="submit">Daftar</button>
+<button type="reset">Reset</button>
+</form>
+<br />
+<h2>Jenis Kelamin</h2>
+<input type="radio" id="laki" name="jk" value="L">
+<label for="laki">Laki-laki</label>
+<input type="radio" id="perempuan" name="jk" value="P">
+<label for="perempuan">Perempuan</label>
+<h2>Keahlian</h2>
+<input type="checkbox" id="html" name="skill" value="HTML">
+<label for="html">HTML</label>
+<input type="checkbox" id="css" name="skill" value="CSS">
+<label for="css">CSS</label>
+<input type="checkbox" id="js" name="skill" value="JavaScript">
+<label for="js">JavaScript</label>
+<br />
+<label for="prodi">Program Studi</label>
+<select id="prodi" name="prodi">
+<option value="">-- Pilih Prodi --</option>
+<option value="ti">Teknik Informatika</option>
+<option value="si">Sistem Informasi</option>
+</select>
+<br><br>
+<label for="alamat">Alamat</label><br>
+<textarea id="alamat" name="alamat" rows="5" cols="40"></textarea>
+<br />
+<form>
+<label for="nama">Nama</label>
+<input type="text" id="nama" name="nama" required minlength="3">
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required>
+<label for="umur">Umur</label>
+<input type="number" id="umur" name="umur" min="17" max="60" required>
+<button type="submit">Kirim</button>
+</form>
+<br />
+<!DOCTYPE html>
+<html>
+<head><title>Portal Mahasiswa</title></head>
+<body>
+<header><h1>Portal Mahasiswa</h1></header>
+<nav>
+<a href="#">Beranda</a>
+<a href="#">Profil</a>
+<a href="#">Kontak</a>
+</nav>
+<main>
+<section>
+<h2>Informasi Akademik</h2>
+<article>
+<h3>Praktikum HTML Lanjutan</h3>
+
+4. Radio Button dan Checkbox
+
+5. Select dan Textarea
+
+6. Validasi Form Dasar
+
+Coba tekan Kirim tanpa mengisi data. Amati pesan validasi yang diberikan browser.
+7. Membuat Halaman Semantic HTML
+
+Modul Praktikum Pemrograman Web
+
+Sufajar Butsianto (sufajar@pelitabangsa.ac.id)
+Universitas Pelita Bangsa, Bekasi
+
+• 7
+
+praktikum-2-html-lanjutan/
+├── index.html
+└── media/
+├── audio.mp3
+└── video.mp4
+<h2>Audio</h2>
+<audio controls>
+<source src="media/audio.mp3" type="audio/mpeg">
+Browser tidak mendukung audio.
+</audio>
+<h2>Video</h2>
+<video controls width="480">
+<source src="media/video.mp4" type="video/mp4">
+Browser tidak mendukung video.
+</video>
+
+<!DOCTYPE html>
+<html>
+<head><title>Biodata Mahasiswa</title></head>
+<body>
+<header><h1>Biodata Mahasiswa</h1></header>
+<nav>
+<a href="index.html">Beranda</a>
+<a href="#biodata">Biodata</a>
+<a href="#form">Form</a>
+</nav>
+<main>
+<section id="biodata">
+<h2>Data Mahasiswa</h2>
+<table border="1">
+<tr><th>Data</th><th>Keterangan</th></tr>
+<tr><td>NIM</td><td>31241001</td></tr>
+<tr><td>Nama</td><td>Nama Mahasiswa</td></tr>
+<tr><td>Program Studi</td><td>Teknik Informatika</td></tr>
+</table>
+</section>
+<section id="form">
+<h2>Form Biodata</h2>
+<form>
+<label for="nama">Nama</label>
+</article>
+</section>
+<aside>Informasi tambahan mahasiswa.</aside>
+</main>
+<footer><p>&copy; 2026 Teknik Informatika</p></footer>
+</body>
+</html>
